@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html, body, section {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .grid {
+      background-color: hsl(212, 45%, 89%);
+      height: 100%; 
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      width: 350px;
+      height: 550px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 30px lightgray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .attribution { 
+      font-size: 15px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    .qr {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .card-text{
+      font-family: 'Outfit', sans-serif; 
+      margin-top: 5px;
+      padding-right: 35px;
+      padding-left: 35px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <section class="grid">
+      <div class="card">
+        <img class="qr" src="./images/image-qr-code.png" width="310">
+        <div class="card-text">
+          <p style="font-weight: 700; font-size: 24px;">Improve your front-end skills by building projects</p>
+          <p style="font-weight: 400; font-size: 17px; color: darkgray;">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </div>
+  </section>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yasin Sezgin</a>.
+  </footer>
+</body>
+</html>
